@@ -39,3 +39,4 @@ testem.log
 Thumbs.db
 test.ts
 browserslist
+package-lock.json
