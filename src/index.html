@@ -7,21 +7,91 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!--<script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/modules/series-label.js"></script>
-  <script src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/modules/export-data.js"></script>-->
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-2">
-      menu here
+<div id="wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2" id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/Picture2.png" alt="" class="img-responsive img-rounded" height="auto"/>
+              <img src="assets/img/Picture1.png" alt="" class="img-responsive img-rounded" height="auto"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>Integrated PHC
+              <i class="fa fa-angle-left"></i></a>
+            <ul class="nav-second-level">
+              <li>
+                <a href="#/phc_system/PHC_SYSTEM"><span class="dboard-system"></span> System</a>
+              </li>
+              <li>
+                <a href="#/phc_input/PHC_INPUTS"><span class="dboard-input"></span> Input </a>
+              </li>
+              <li>
+                <a href="#/phc_service/PHC_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span>
+                  Service Delivery</a>
+              </li>
+              <li>
+                <a href="#/phc_coverage/PHC_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+              </li>
+              <li>
+                <a href="#/phc_outcomes/PHC_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>MOH Directorates
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>IHPDC
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>BIOS
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>SPIU & Corp Services
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>MPPD
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>RHCC
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="dboard-dashboard"></span>MRC
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+        <app-root></app-root>
+      </div>
     </div>
-    <div class="col-sm-10">
-      <app-root></app-root>
-    </div>
-  </div>
+</div>
 </div>
 </body>
 </html>

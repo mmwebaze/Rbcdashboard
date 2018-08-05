@@ -12,12 +12,12 @@ export class ChartService {
     public constructor(private authService: AuthService) {}
 
     public generateBar(containerId: string, chartType: string) {
-        /*this.authService.authenticate('', '').subscribe(
+        this.authService.authenticate('admin', 'district').subscribe(
             (data: any) => {
                 console.log(data);
             },
             err => console.log(err)
-        );*/
+        );
         if (chartType === 'bar' || chartType === 'column') {
              this.barChart = new BarChart();
             this.barChart.create(containerId, chartType);
