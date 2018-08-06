@@ -12,7 +12,7 @@ export class ChartService {
     public constructor(private authService: AuthService) {}
 
     public generateBar(containerId: string, chartType: string) {
-        this.authService.authenticate('admin', 'district').subscribe(
+        this.authService.authenticate('', '').subscribe(
             (data: any) => {
                 console.log(data);
             },

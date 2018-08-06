@@ -10,3 +10,4 @@ export class AuthService {
         return this.httpClient.get('http://localhost:8080/api/resources.json', httpOptions);
     }
 }
+

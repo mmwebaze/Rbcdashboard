@@ -29,5 +29,5 @@
 }
 
 .alert-box {
-    border-style: ridge;
+    border: 1px solid;
 }
