@@ -10,88 +10,103 @@
 </head>
 <body>
 <div id="wrapper">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-2" id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <li class="sidebar-brand">
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/img/Picture2.png" alt="" class="img-responsive img-rounded" height="auto"/>
-              <img src="assets/img/Picture1.png" alt="" class="img-responsive img-rounded" height="auto"/>
-            </a>
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/Picture2.png" alt="" class="img-responsive img-rounded" height="auto"/>
+          <img src="assets/img/Picture1.png" alt="" class="img-responsive img-rounded" height="auto"/>
+        </a>
+      </li>
+      <li class="menu_level_one" id="iphc" menu-show="hidden">
+        <a href="#">
+          <span class="dboard-dashboard"></span>Integrated PHC
+          <i class="fa fa-angle-left"></i></a>
+        <ul class="nav-second-level">
+          <li>
+            <a href="#/phc_system/PHC_SYSTEM"><span class="dboard-system"></span> System</a>
           </li>
           <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>Integrated PHC
-              <i class="fa fa-angle-left"></i></a>
-            <ul class="nav-second-level">
-              <li>
-                <a href="#/phc_system/PHC_SYSTEM"><span class="dboard-system"></span> System</a>
-              </li>
-              <li>
-                <a href="#/phc_input/PHC_INPUTS"><span class="dboard-input"></span> Input </a>
-              </li>
-              <li>
-                <a href="#/phc_service/PHC_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span>
-                  Service Delivery</a>
-              </li>
-              <li>
-                <a href="#/phc_coverage/PHC_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
-              </li>
-              <li>
-                <a href="#/phc_outcomes/PHC_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
-              </li>
-            </ul>
+            <a href="#/phc_input/PHC_INPUTS"><span class="dboard-input"></span> Input </a>
           </li>
           <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>MOH Directorates
-              <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="#/phc_service/PHC_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span>
+              Service Delivery</a>
           </li>
           <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>IHPDC
-              <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="#/phc_coverage/PHC_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
           </li>
           <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>BIOS
-              <i class="fa fa-angle-left"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>SPIU & Corp Services
-              <i class="fa fa-angle-left"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>MPPD
-              <i class="fa fa-angle-left"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>RHCC
-              <i class="fa fa-angle-left"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="dboard-dashboard"></span>MRC
-              <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="#/phc_outcomes/PHC_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
           </li>
         </ul>
-      </div>
-      <div class="col-md-10">
-        <app-root></app-root>
+      </li>
+      <li class="menu_level_one">
+        <a href="#">
+          <span class="dboard-dashboard"></span>MOH Directorates
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
+      <li class="menu_level_one" id="ihpdc" menu-show="hidden">
+        <a href="#">
+          <span class="dboard-dashboard"></span>IHPDC
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <ul class="nav-second-level">
+          <a href="#" class="menu_level_one" menu-show="hidden">
+            <span class="dboard-dashboard"></span>HIV
+            <i class="fa fa-angle-left"></i>
+          </a>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <span class="dboard-dashboard"></span>BIOS
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="dboard-dashboard"></span>SPIU & Corp Services
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="dboard-dashboard"></span>MPPD
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="dboard-dashboard"></span>RHCC
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="dboard-dashboard"></span>MRC
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <app-root></app-root>
+        </div>
       </div>
     </div>
-</div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
 </div>
 </body>
 </html>
