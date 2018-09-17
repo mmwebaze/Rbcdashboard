@@ -2,7 +2,7 @@ import * as Highcharts from 'highcharts';
 import * as Exporting from 'highcharts/modules/exporting';
 
 export class DonutChart {
-    public create(containerId: string, chartType: string) {
+    public create(containerId: string, chartType: string, title: string) {
         Exporting(Highcharts);
 
         Highcharts.chart(containerId, {
@@ -12,7 +12,7 @@ export class DonutChart {
                 plotShadow: false
             },
             title: {
-                text: 'Browser<br>shares<br>2017',
+                text: title,
                 align: 'center',
                 verticalAlign: 'middle',
                 y: 40

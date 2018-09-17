@@ -2,14 +2,14 @@ import * as Highcharts from 'highcharts';
 import * as Exporting from 'highcharts/modules/exporting';
 
 export class StackedChart {
-    public create(containerId: string, chartType: string) {
+    public create(containerId: string, chartType: string, title: string) {
         Exporting(Highcharts);
         Highcharts.chart(containerId, {
             chart: {
                 type: 'column'
             },
             title: {
-                text: 'Stacked bar chart'
+                text: title
             },
             xAxis: {
                 categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']

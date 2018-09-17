@@ -2,13 +2,13 @@ import * as Highcharts from 'highcharts';
 import * as Exporting from 'highcharts/modules/exporting';
 
 export class LineChart {
-    public create(containerId: string, chartType: string) {
+    public create(containerId: string, chartType: string, title: string) {
         Exporting(Highcharts);
 
         Highcharts.chart(containerId, {
 
             title: {
-                text: 'Solar Employment Growth by Sector, 2010-2016'
+                text: title
             },
 
             subtitle: {

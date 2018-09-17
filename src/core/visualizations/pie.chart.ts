@@ -2,7 +2,7 @@ import * as Highcharts from 'highcharts';
 import * as Exporting from 'highcharts/modules/exporting';
 
 export class PieChart {
-    public create(containerId: string, chartType: string) {
+    public create(containerId: string, chartType: string, title: string) {
         Exporting(Highcharts);
         Highcharts.chart(containerId, {
             chart: {
@@ -12,7 +12,7 @@ export class PieChart {
                 type: 'pie'
             },
             title: {
-                text: 'Browser market shares in January, 2018'
+                text: title
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

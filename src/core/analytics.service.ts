@@ -5,8 +5,8 @@ import { HttpClient} from '@angular/common/http';
 export class AnalyticsService {
     public constructor(private httpClient: HttpClient) {}
     public getAnalyticsData($analyticsEndpoint) {
-        const username = '';
-        const password = '';
+        const username = 'amza';
+        const password = 'district';
         const httpOptions = { headers: { 'Authorization': 'Basic ' + btoa(username + ':' + password) }};
 
         return this.httpClient.get($analyticsEndpoint, httpOptions);
